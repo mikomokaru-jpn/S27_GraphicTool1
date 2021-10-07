@@ -11,4 +11,3 @@ Draw a line on the view that is corresponded to the trajectory of mouse drag .
 You create a rectangle area that contains you would erase , by dragging with right mouse button. Click Clear Button to erase the lines.
 ### Output an image to a file
 When you click Save Button, you can save a drawn image to a file of PNG format. The output destination file path is specified with Save Panel.
-## Class Structure Diagram
