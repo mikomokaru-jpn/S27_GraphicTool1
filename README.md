@@ -1,4 +1,4 @@
-## macOS S27_GraphicTool1
+## macOS_S_GraphicTool1
 ## Draw freehand lines on image
 
 <img src="http://mikomokaru.sakura.ne.jp/data/B52/GraphicTool1.png" alt="GraphicTool1" title="GraphicTool1" width="400">
