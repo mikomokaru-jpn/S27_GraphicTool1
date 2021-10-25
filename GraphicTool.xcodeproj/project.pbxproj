@@ -12,7 +12,7 @@
 		05085C792606AF8A0020619C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05085C782606AF8A0020619C /* Assets.xcassets */; };
 		05085C7C2606AF8A0020619C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05085C7A2606AF8A0020619C /* MainMenu.xib */; };
 		05085C852606B0570020619C /* UAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05085C842606B0570020619C /* UAView.swift */; };
-		0535A1AE260A12E500ACE6C6 /* NSBezierPath+MyBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0535A1AD260A12E500ACE6C6 /* NSBezierPath+MyBezierPath.swift */; };
+		05B9F4292726D739004C51B0 /* NSBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9F4282726D739004C51B0 /* NSBezierPathExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		05085C7D2606AF8A0020619C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05085C7E2606AF8A0020619C /* GraphicTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GraphicTool.entitlements; sourceTree = "<group>"; };
 		05085C842606B0570020619C /* UAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAView.swift; sourceTree = "<group>"; };
-		0535A1AD260A12E500ACE6C6 /* NSBezierPath+MyBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+MyBezierPath.swift"; sourceTree = "<group>"; };
+		05B9F4282726D739004C51B0 /* NSBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,10 @@
 		05085C752606AF8A0020619C /* GraphicTool */ = {
 			isa = PBXGroup;
 			children = (
+				05B9F4282726D739004C51B0 /* NSBezierPathExtension.swift */,
 				05085C762606AF8A0020619C /* AppDelegate.swift */,
 				05085C842606B0570020619C /* UAView.swift */,
 				0501E471260AA098006D5522 /* CGRect+Util.swift */,
-				0535A1AD260A12E500ACE6C6 /* NSBezierPath+MyBezierPath.swift */,
 				05085C782606AF8A0020619C /* Assets.xcassets */,
 				05085C7A2606AF8A0020619C /* MainMenu.xib */,
 				05085C7D2606AF8A0020619C /* Info.plist */,
@@ -96,7 +96,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "権兵衛";
 				TargetAttributes = {
 					05085C722606AF8A0020619C = {
@@ -145,9 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0535A1AE260A12E500ACE6C6 /* NSBezierPath+MyBezierPath.swift in Sources */,
 				0501E472260AA099006D5522 /* CGRect+Util.swift in Sources */,
 				05085C852606B0570020619C /* UAView.swift in Sources */,
+				05B9F4292726D739004C51B0 /* NSBezierPathExtension.swift in Sources */,
 				05085C772606AF8A0020619C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +180,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -187,6 +188,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -214,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -237,6 +239,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -244,6 +247,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -265,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -277,13 +281,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GraphicTool/GraphicTool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GraphicTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikomokaru.GraphicTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -292,13 +297,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GraphicTool/GraphicTool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GraphicTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikomokaru.GraphicTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

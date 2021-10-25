@@ -173,8 +173,8 @@ class UAView: NSView {
     override func rightMouseDragged(with event: NSEvent) {
 
         let endPoint = self.convert(event.locationInWindow, from: nil)
-        let width  = fabs(startPoint.x - endPoint.x)
-        let height  = fabs(startPoint.y - endPoint.y)
+        let width  = abs(startPoint.x - endPoint.x)
+        let height  = abs(startPoint.y - endPoint.y)
 
         var xPos: CGFloat = 0.0;
         var yPos: CGFloat = 0.0;
